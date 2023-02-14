@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety</title>
+    <link rel="stylesheet" href="css/safety.css">
+</head>
+
+<body>
+    <p class="top">SAFETY</p>
+    <div class="main">
+        <div class="one">Hard Hats
+
+            <div class="main_1">
+                <div class="img-comp-container">
+                    <div class="img-comp-img">
+                        <img src="img/hat2 (2).png" width="300" height="200">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="img/hat1 (1).png" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <div class="one">Leggings, Foot guards
+
+            <div class="main_1">
+                <div class="img-comp-container">
+                    <div class="img-comp-img">
+                        <img src="img/foot1.jfif" width="300" height="200">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="img/foot2.jfif" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="one">earplugs and earmuffs
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/ear1.png" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/ear2.jpg" width="300" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main1">
+        <div class="one">gloves
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/gloves1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/gloves2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="one">shoes casual
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/casualshoes1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/casualshoes2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="one">eye protection
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/glass1.png" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/glass2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="one">surgical face masks
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/mask1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/mask2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="one">respirators
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/respi1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/respi2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="one">face shields
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/faceshield1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/faceshield2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="one">proximity sensors
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/sensor1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/sensof2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="one">body shields
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/bodshield2.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/bodyshield.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="one">safety shoes
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/shoes1.jfif" width="300" height="200">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/shoes2.jfif" width="300" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    function initComparisons() {
+        var x, i;
+        /*find all elements with an "overlay" class:*/
+        x = document.getElementsByClassName("img-comp-overlay");
+        for (i = 0; i < x.length; i++) {
+            /*once for each "overlay" element:
+            pass the "overlay" element as a parameter when executing the compareImages function:*/
+            compareImages(x[i]);
+        }
+        function compareImages(img) {
+            var slider, img, clicked = 0, w, h;
+            /*get the width and height of the img element*/
+            w = img.offsetWidth;
+            h = img.offsetHeight;
+            /*set the width of the img element to 50%:*/
+            img.style.width = (w / 2) + "px";
+            /*create slider:*/
+            slider = document.createElement("DIV");
+            slider.setAttribute("class", "img-comp-slider");
+            /*insert slider*/
+            img.parentElement.insertBefore(slider, img);
+            /*position the slider in the middle:*/
+            slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+            slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+            /*execute a function when the mouse button is pressed:*/
+            slider.addEventListener("mousedown", slideReady);
+            /*and another function when the mouse button is released:*/
+            window.addEventListener("mouseup", slideFinish);
+            /*or touched (for touch screens:*/
+            slider.addEventListener("touchstart", slideReady);
+            /*and released (for touch screens:*/
+            window.addEventListener("touchend", slideFinish);
+            function slideReady(e) {
+                /*prevent any other actions that may occur when moving over the image:*/
+                e.preventDefault();
+                /*the slider is now clicked and ready to move:*/
+                clicked = 1;
+                /*execute a function when the slider is moved:*/
+                window.addEventListener("mousemove", slideMove);
+                window.addEventListener("touchmove", slideMove);
+            }
+            function slideFinish() {
+                /*the slider is no longer clicked:*/
+                clicked = 0;
+            }
+            function slideMove(e) {
+                var pos;
+                /*if the slider is no longer clicked, exit this function:*/
+                if (clicked == 0) return false;
+                /*get the cursor's x position:*/
+                pos = getCursorPos(e)
+                /*prevent the slider from being positioned outside the image:*/
+                if (pos < 0) pos = 0;
+                if (pos > w) pos = w;
+                /*execute a function that will resize the overlay image according to the cursor:*/
+                slide(pos);
+            }
+            function getCursorPos(e) {
+                var a, x = 0;
+                e = (e.changedTouches) ? e.changedTouches[0] : e;
+                /*get the x positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x coordinate, relative to the image:*/
+                x = e.pageX - a.left;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                return x;
+            }
+            function slide(x) {
+                /*resize the image:*/
+                img.style.width = x + "px";
+                /*position the slider:*/
+                slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            }
+        }
+    }
+</script>
+
+<script>
+    /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+    initComparisons();
+    </script>
+</html>
